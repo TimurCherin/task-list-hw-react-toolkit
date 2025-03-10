@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addTask, toggleTask, deleteTask } from "../redux/tasks/actions";
+import { fetchTasks, addTask, toggleTask, deleteTask } from "../redux/tasks/reducer";
 import { setFilter } from "../redux/filters/actions";
 import styles from "./TaskList.module.css";
 
@@ -9,6 +9,10 @@ const TaskList = () => {
     const filter = useSelector((state) => state.filters);
     const dispatch = useDispatch();
     const [text, setText] = useState("");
+
+    useEffect(() => {
+        dispatch(fetchTasks());
+    }, [dispatch]);
 
     const filteredTasks = tasks.filter((task) =>
         filter === "all" ? true : filter === "completed" ? task.completed : !task.completed
@@ -22,7 +26,7 @@ const TaskList = () => {
                     type="text"
                     value={text}
                     onChange={(e) => setText(e.target.value)}
-                    placeholder="Add a task..."
+                    placeholder="Add a task"
                 />
                 <button
                     className={styles.addButton}
@@ -46,13 +50,19 @@ const TaskList = () => {
                     <li key={task.id} className={styles.taskItem}>
                         <span
                             className={task.completed ? styles.completed : ""}
-                            onClick={() => dispatch(toggleTask(task.id))}
+                            onClick={() => {
+                                if (task.id >= 4) {
+                                    dispatch(toggleTask(task));
+                                }
+                            }}
                         >
                             {task.text}
                         </span>
-                        <button className={styles.deleteButton} onClick={() => dispatch(deleteTask(task.id))}>
-                            X
-                        </button>
+                        {task.id >= 4 && (
+                            <button className={styles.deleteButton} onClick={() => dispatch(deleteTask(task.id))}>
+                                X
+                            </button>
+                        )}
                     </li>
                 ))}
             </ul>
