@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/task-list-hw-react-toolkit/static/css/main.80a98fff.css",
-    "main.js": "/task-list-hw-react-toolkit/static/js/main.fda40362.js",
+    "main.js": "/task-list-hw-react-toolkit/static/js/main.6013c15e.js",
     "index.html": "/task-list-hw-react-toolkit/index.html",
     "main.80a98fff.css.map": "/task-list-hw-react-toolkit/static/css/main.80a98fff.css.map",
-    "main.fda40362.js.map": "/task-list-hw-react-toolkit/static/js/main.fda40362.js.map"
+    "main.6013c15e.js.map": "/task-list-hw-react-toolkit/static/js/main.6013c15e.js.map"
   },
   "entrypoints": [
     "static/css/main.80a98fff.css",
-    "static/js/main.fda40362.js"
+    "static/js/main.6013c15e.js"
   ]
 }
