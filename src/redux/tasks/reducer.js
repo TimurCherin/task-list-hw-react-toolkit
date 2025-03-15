@@ -34,6 +34,7 @@ export const toggleTask = createAsyncThunk("tasks/toggleTask", async (task) => {
     return response.data;
 });
 
+
 const tasksSlice = createSlice({
     name: "tasks",
     initialState: [],
