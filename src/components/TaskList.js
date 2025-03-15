@@ -15,7 +15,7 @@ const TaskList = () => {
     }, [dispatch]);
 
     const filteredTasks = tasks.filter((task) =>
-        filter === "all" ? true : filter === "completed" ? task.completed : !task.completed
+        filter === "all" ? true : filter === "completed" ? task.completed : !task.completedЯ
     );
 
     return (
@@ -37,6 +37,7 @@ const TaskList = () => {
                         }
                     }}
                 >
+
                     Add
                 </button>
             </div>
