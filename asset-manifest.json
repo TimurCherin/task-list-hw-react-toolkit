@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/task-list-hw-react-toolkit/static/css/main.80a98fff.css",
-    "main.js": "/task-list-hw-react-toolkit/static/js/main.6013c15e.js",
+    "main.css": "/task-list-hw-react-toolkit/static/css/main.3931b2bd.css",
+    "main.js": "/task-list-hw-react-toolkit/static/js/main.b4544f78.js",
     "index.html": "/task-list-hw-react-toolkit/index.html",
-    "main.80a98fff.css.map": "/task-list-hw-react-toolkit/static/css/main.80a98fff.css.map",
-    "main.6013c15e.js.map": "/task-list-hw-react-toolkit/static/js/main.6013c15e.js.map"
+    "main.3931b2bd.css.map": "/task-list-hw-react-toolkit/static/css/main.3931b2bd.css.map",
+    "main.b4544f78.js.map": "/task-list-hw-react-toolkit/static/js/main.b4544f78.js.map"
   },
   "entrypoints": [
-    "static/css/main.80a98fff.css",
-    "static/js/main.6013c15e.js"
+    "static/css/main.3931b2bd.css",
+    "static/js/main.b4544f78.js"
   ]
 }
