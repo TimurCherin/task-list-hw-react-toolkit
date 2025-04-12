@@ -8,6 +8,13 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.stats {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+  }
+
 .inputGroup {
     display: flex;
     margin-bottom: 20px;
